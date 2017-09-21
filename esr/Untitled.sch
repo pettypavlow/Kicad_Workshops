@@ -1,0 +1,149 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Untitled-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 78L05 U?
+U 1 1 57F9629C
+P 1350 1500
+F 0 "U?" H 1500 1304 50  0000 C CNN
+F 1 "78L05" H 1350 1700 50  0000 C CNN
+F 2 "" H 1350 1500 50  0000 C CNN
+F 3 "" H 1350 1500 50  0000 C CNN
+	1    1350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 57F962E1
+P 1000 3350
+F 0 "R2" V 1080 3350 50  0000 C CNN
+F 1 "100kR" V 1000 3350 39  0000 C CNN
+F 2 "" V 930 3350 50  0000 C CNN
+F 3 "" H 1000 3350 50  0000 C CNN
+	1    1000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57F963A7
+P 3200 1100
+F 0 "C?" H 3225 1200 50  0000 L CNN
+F 1 "C" H 3225 1000 50  0000 L CNN
+F 2 "" H 3238 950 50  0000 C CNN
+F 3 "" H 3200 1100 50  0000 C CNN
+	1    3200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 57F9649F
+P 2750 1400
+F 0 "C?" H 2775 1500 50  0000 L CNN
+F 1 "CP" H 2775 1300 50  0000 L CNN
+F 2 "" H 2788 1250 50  0000 C CNN
+F 3 "" H 2750 1400 50  0000 C CNN
+	1    2750 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 57F96521
+P 2750 1000
+F 0 "RV?" H 2750 920 50  0000 C CNN
+F 1 "POT" H 2750 1000 50  0000 C CNN
+F 2 "" H 2750 1000 50  0000 C CNN
+F 3 "" H 2750 1000 50  0000 C CNN
+	1    2750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 57F96753
+P 1000 3650
+F 0 "#PWR?" H 1000 3400 50  0001 C CNN
+F 1 "Earth" H 1000 3500 50  0001 C CNN
+F 2 "" H 1000 3650 50  0000 C CNN
+F 3 "" H 1000 3650 50  0000 C CNN
+	1    1000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3500 1000 3650
+$Comp
+L R R1
+U 1 1 57F96B76
+P 1000 2800
+F 0 "R1" V 1080 2800 50  0000 C CNN
+F 1 "100kR" V 1000 2800 39  0000 C CNN
+F 2 "" V 930 2800 50  0000 C CNN
+F 3 "" H 1000 2800 50  0000 C CNN
+	1    1000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2950 1000 3200
+$Comp
+L D D?
+U 1 1 57FC9C5C
+P 3500 2850
+F 0 "D?" H 3500 2950 50  0000 C CNN
+F 1 "D" H 3500 2750 50  0000 C CNN
+F 2 "" H 3500 2850 50  0000 C CNN
+F 3 "" H 3500 2850 50  0000 C CNN
+	1    3500 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 57FC9DD4
+P 1600 3100
+F 0 "R3" V 1680 3100 50  0000 C CNN
+F 1 "100kR" V 1600 3100 39  0000 C CNN
+F 2 "" V 1530 3100 50  0000 C CNN
+F 3 "" H 1600 3100 50  0000 C CNN
+	1    1600 3100
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
