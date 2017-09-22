@@ -118,7 +118,7 @@ U 1 1 59BD5C0D
 P 8550 2300
 F 0 "RV1" V 8375 2300 50  0000 C CNN
 F 1 "100k" V 8450 2300 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_DIP_x2_W6.15mm_Slide_Omron_A6H" H 8550 2300 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Alps_RK163_Double_Vertical" H 8550 2300 50  0001 C CNN
 F 3 "" H 8550 2300 50  0001 C CNN
 	1    8550 2300
 	0    1    1    0   
@@ -221,7 +221,7 @@ U 1 1 59BD64AA
 P 4050 2500
 F 0 "T1" H 4050 2750 50  0000 C CNN
 F 1 "EA-77-188" H 4050 2200 50  0000 C CNN
-F 2 "Transformers_CHK:Trafo_CHK-EI30-2VA_2xSec" H 4050 2500 50  0001 C CNN
+F 2 "Transformers_SMPS_ThroughHole:Coilcraft-Q4434-B_Rhombus-T1311" H 4050 2500 50  0001 C CNN
 F 3 "" H 4050 2500 50  0001 C CNN
 	1    4050 2500
 	1    0    0    -1  
