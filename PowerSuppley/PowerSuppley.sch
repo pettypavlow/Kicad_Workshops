@@ -1,0 +1,328 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x02 J1
+U 1 1 59DA4757
+P 1950 2700
+F 0 "J1" H 1950 2800 50  0000 C CNN
+F 1 "Conn_01x02" H 1950 2500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 1950 2700 50  0001 C CNN
+F 3 "" H 1950 2700 50  0001 C CNN
+	1    1950 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J2
+U 1 1 59DA47D0
+P 7350 2700
+F 0 "J2" H 7350 2800 50  0000 C CNN
+F 1 "Conn_01x02" H 7350 2500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 7350 2700 50  0001 C CNN
+F 3 "" H 7350 2700 50  0001 C CNN
+	1    7350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Bridge_+AA- D1
+U 1 1 59DA5FCC
+P 3350 2700
+F 0 "D1" H 3400 2975 50  0000 L CNN
+F 1 "D_Bridge_+AA-" H 3400 2900 50  0000 L CNN
+F 2 "Diodes_THT:Diode_Bridge_18.5x5.5" H 3350 2700 50  0001 C CNN
+F 3 "" H 3350 2700 50  0001 C CNN
+	1    3350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 59DA6083
+P 4150 3000
+F 0 "C1" H 4175 3100 50  0000 L CNN
+F 1 "1mF" H 4175 2900 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 4188 2850 50  0001 C CNN
+F 3 "" H 4150 3000 50  0001 C CNN
+	1    4150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 59DA6154
+P 4450 3000
+F 0 "C2" H 4475 3100 50  0000 L CNN
+F 1 "0.1uF" H 4475 2900 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 4488 2850 50  0001 C CNN
+F 3 "" H 4450 3000 50  0001 C CNN
+	1    4450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM317_TO3 U1
+U 1 1 59DA619B
+P 5150 2700
+F 0 "U1" H 5000 2825 50  0000 C CNN
+F 1 "LM317_TO3" H 5150 2825 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-3PB__Horizontal" H 5150 2900 50  0001 C CIN
+F 3 "" H 5150 2700 50  0001 C CNN
+	1    5150 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L POT RV1
+U 1 1 59DA61BE
+P 5150 3650
+F 0 "RV1" V 4975 3650 50  0000 C CNN
+F 1 "5k" V 5050 3650 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_VishaySpectrol_248GH_249GH_Vertical" H 5150 3650 50  0001 C CNN
+F 3 "" H 5150 3650 50  0001 C CNN
+	1    5150 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2800 2850 2800
+Wire Wire Line
+	2850 2800 2850 3000
+Wire Wire Line
+	2850 3000 3350 3000
+Wire Wire Line
+	3350 2400 2850 2400
+Wire Wire Line
+	2850 2400 2850 2700
+Wire Wire Line
+	2850 2700 2150 2700
+$Comp
+L GNDREF #PWR01
+U 1 1 59DA6317
+P 3050 2750
+F 0 "#PWR01" H 3050 2500 50  0001 C CNN
+F 1 "GNDREF" H 3050 2600 50  0000 C CNN
+F 2 "" H 3050 2750 50  0001 C CNN
+F 3 "" H 3050 2750 50  0001 C CNN
+	1    3050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2700 3050 2750
+$Comp
+L D_ALT D2
+U 1 1 59DA6654
+P 5100 2350
+F 0 "D2" H 5100 2450 50  0000 C CNN
+F 1 "1N4004" H 5100 2250 50  0000 C CNN
+F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 5100 2350 50  0001 C CNN
+F 3 "" H 5100 2350 50  0001 C CNN
+	1    5100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2700 7150 2700
+Wire Wire Line
+	5650 2700 5650 2350
+Wire Wire Line
+	5650 2350 5250 2350
+Wire Wire Line
+	4950 2350 4600 2350
+Wire Wire Line
+	4600 2350 4600 2700
+Wire Wire Line
+	3650 2700 4850 2700
+$Comp
+L GNDREF #PWR02
+U 1 1 59DA69DF
+P 7000 3150
+F 0 "#PWR02" H 7000 2900 50  0001 C CNN
+F 1 "GNDREF" H 7000 3000 50  0000 C CNN
+F 2 "" H 7000 3150 50  0001 C CNN
+F 3 "" H 7000 3150 50  0001 C CNN
+	1    7000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2800 7000 2800
+Wire Wire Line
+	7000 2800 7000 3150
+Wire Wire Line
+	4150 2700 4150 2850
+Connection ~ 4600 2700
+Connection ~ 4150 2700
+Wire Wire Line
+	4450 2700 4450 2850
+Connection ~ 4450 2700
+Wire Wire Line
+	5150 3000 5150 3500
+Wire Wire Line
+	5300 3650 5300 3800
+Wire Wire Line
+	5300 3800 5150 3800
+$Comp
+L GNDREF #PWR03
+U 1 1 59DA6AD0
+P 5150 4150
+F 0 "#PWR03" H 5150 3900 50  0001 C CNN
+F 1 "GNDREF" H 5150 4000 50  0000 C CNN
+F 2 "" H 5150 4150 50  0001 C CNN
+F 3 "" H 5150 4150 50  0001 C CNN
+	1    5150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR04
+U 1 1 59DA6AF3
+P 4150 3400
+F 0 "#PWR04" H 4150 3150 50  0001 C CNN
+F 1 "GNDREF" H 4150 3250 50  0000 C CNN
+F 2 "" H 4150 3400 50  0001 C CNN
+F 3 "" H 4150 3400 50  0001 C CNN
+	1    4150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR05
+U 1 1 59DA6B16
+P 4450 3400
+F 0 "#PWR05" H 4450 3150 50  0001 C CNN
+F 1 "GNDREF" H 4450 3250 50  0000 C CNN
+F 2 "" H 4450 3400 50  0001 C CNN
+F 3 "" H 4450 3400 50  0001 C CNN
+	1    4450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3150 4450 3400
+Wire Wire Line
+	4150 3150 4150 3400
+Wire Wire Line
+	5150 3800 5150 4150
+$Comp
+L R R1
+U 1 1 59DA6B99
+P 6000 3050
+F 0 "R1" V 6080 3050 50  0000 C CNN
+F 1 "250" V 6000 3050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5930 3050 50  0001 C CNN
+F 3 "" H 6000 3050 50  0001 C CNN
+	1    6000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C3
+U 1 1 59DA6BF3
+P 6000 3850
+F 0 "C3" H 6025 3950 50  0000 L CNN
+F 1 "10uF" H 6025 3750 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P2.00mm" H 6038 3700 50  0001 C CNN
+F 3 "" H 6000 3850 50  0001 C CNN
+	1    6000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C4
+U 1 1 59DA6C91
+P 6700 3050
+F 0 "C4" H 6725 3150 50  0000 L CNN
+F 1 "100uF" H 6725 2950 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 6738 2900 50  0001 C CNN
+F 3 "" H 6700 3050 50  0001 C CNN
+	1    6700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_ALT D3
+U 1 1 59DA6CEA
+P 6400 3050
+F 0 "D3" H 6400 3150 50  0000 C CNN
+F 1 "1N4004" H 6400 2950 50  0000 C CNN
+F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 6400 3050 50  0001 C CNN
+F 3 "" H 6400 3050 50  0001 C CNN
+	1    6400 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 3350 6400 3350
+Wire Wire Line
+	6000 3200 6000 3700
+Connection ~ 5150 3350
+Connection ~ 6000 3350
+Wire Wire Line
+	6400 3350 6400 3200
+Wire Wire Line
+	6000 2700 6000 2900
+Connection ~ 5650 2700
+Wire Wire Line
+	6400 2700 6400 2900
+Connection ~ 6000 2700
+Wire Wire Line
+	6700 2700 6700 2900
+Connection ~ 6400 2700
+$Comp
+L GNDREF #PWR06
+U 1 1 59DA7004
+P 6700 4150
+F 0 "#PWR06" H 6700 3900 50  0001 C CNN
+F 1 "GNDREF" H 6700 4000 50  0000 C CNN
+F 2 "" H 6700 4150 50  0001 C CNN
+F 3 "" H 6700 4150 50  0001 C CNN
+	1    6700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR07
+U 1 1 59DA7033
+P 6000 4150
+F 0 "#PWR07" H 6000 3900 50  0001 C CNN
+F 1 "GNDREF" H 6000 4000 50  0000 C CNN
+F 2 "" H 6000 4150 50  0001 C CNN
+F 3 "" H 6000 4150 50  0001 C CNN
+	1    6000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4000 6000 4150
+Wire Wire Line
+	6700 3200 6700 4150
+Connection ~ 6700 2700
+$EndSCHEMATC
